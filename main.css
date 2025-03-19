@@ -109,12 +109,6 @@ h1 {
 	z-index: 2;
 }
 
-@media (max-width: 786px) {
-	.navigation {
-		--navigation-width: max(20%, 130px);
-	}
-}
-
 .menu-items ul {
 	list-style: none;
 	padding: 0;
@@ -487,66 +481,6 @@ footer {
 	font-size: larger;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
-
-/* Responsive Layout: 2x2 on medium screens */
-
-/* Responsive Layout */
-@media (max-width: 786px) {
-	.robotics-divisions {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.alt-header-image {
-		display: none;
-	}
-
-
-
-	.header-image {
-		width: 100%;
-		border-right: 10px transparent solid;
-	}
-
-	.slideshow-container {
-		width: 100%;
-		margin-top: 10px
-	}
-
-	.achievements {
-		width: 100%;
-	}
-
-	.content {
-		width: 100%;
-	}
-
-	.infomation {
-		display: inline;
-	}
-}
-
-@media (max-width: 500px) {
-	.robotics-divisions {
-		grid-template-columns: 1fr;
-	}
-
-	.division:hover {
-		z-index: 5;
-		scale: 102%;
-	}
-
-	.follow,
-	.contact {
-		width: 100%;
-	}
-
-	.aoc {
-		margin-top: 190px;
-	}
-}
-
-
 .timeline-content img {
 	width: 100%;
 }
@@ -670,11 +604,78 @@ footer {
 	--main-color: pink;
 }
 
-@media (max-width:767px) {
+/* Mobile view */
+/* Media queries - Responsive timeline on screens less than 600px wide */
+
+/* Responsive Layout: 2x2 on medium screens */
+
+/* Responsive Layout */
+@media (max-width: 786px) {
 
 	.main-timeline .timeline,
 	.main-timeline .timeline:nth-child(even) {
 		width: 100%;
 		margin: 0 0 25px;
+	}
+
+	.navigation {
+		--navigation-width: max(20%, 130px);
+	}
+
+	.robotics-divisions {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.alt-header-image {
+		display: none;
+	}
+
+
+
+	.header-image {
+		width: 100%;
+		border-right: 10px transparent solid;
+	}
+
+	.slideshow-container {
+		width: 100%;
+		margin-top: 10px
+	}
+
+	.achievements {
+		width: 100%;
+	}
+
+	.content {
+		width: 100%;
+	}
+
+	.infomation {
+		display: inline;
+	}
+}
+
+@media (max-width: 500px) {
+	.robotics-divisions {
+		grid-template-columns: 1fr;
+	}
+
+	.division:hover {
+		z-index: 5;
+		scale: 102%;
+	}
+
+	.follow,
+	.contact {
+		width: 100%;
+	}
+
+	.aoc {
+		margin-top: 190px;
+	}
+
+	.navigation {
+		height: 350px;
+		border-bottom: 2px solid black;
 	}
 }
